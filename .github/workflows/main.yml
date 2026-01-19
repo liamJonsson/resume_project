@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ "master" ] # Eller "main", kolla vad din branch heter!
+
+jobs:
+  deploy-to-github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Installera .NET (ändra version om du använder .NET 9)
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      # Bygg projektet och skapa filerna för publicering
+      - name: Publish .NET Core Project
+        run: dotnet publish -c Release -o release --nologo
+
+      # FIX: GitHub ignorerar mappar som börjar på _ (som _framework i Blazor)
+      # Vi skapar en tom .nojekyll fil för att förhindra detta.
+      - name: Add .nojekyll file
+        run: touch release/wwwroot/.nojekyll
+
+      # Ladda upp till GitHub Pages
+      - name: Commit wwwroot to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          FOLDER: release/wwwroot
