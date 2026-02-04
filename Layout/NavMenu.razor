@@ -1,28 +1,77 @@
-﻿<div class="menu-header">
-    <a href="">Mitt CV</a>
-
-    <button @onclick="ToggleNavMenu">
-        ☰ Meny
-    </button>
+﻿    
+@*Om arIkryssad är true, ska det stå tom sträng annars closed 
+vilket lägger på css-klassen "closed"*@
+<div class="menu-container @(ShowMenu ? "" : "closed")">
+    <div class="d-flex justify-content-end">
+        <svg @onclick="OnToggle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" stroke="currentColor" stroke-width="1" class="bi bi-dash-lg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+        </svg>
+    </div>
+    <div class="content-position">
+        <img src="/images/profile-picture.jpeg" alt="Profilbild " class="profile-image" />
+    </div>   
+    <div class="mt-4 info-position">
+        <p id="name">Liam Jonsson</p>
+        <p>073 752 81 05</p>
+        <p>limme98@gmail.com</p>
+        <p>Karlsdalsallén 47B, <br /> 702 52 Örebro</p>
+    </div>
+    <div class="mt-4">
+        <h2 class="skill-name">Java</h2>
+        <div class="content-position">
+            <div class="skill-background">
+                <div id="skill-java" class="skill-bar"></div>
+            </div>
+        </div>   
+    </div>
+    <div class="mt-4">
+        <h2 class="skill-name">C#</h2>
+        <div class="content-position">
+            <div class="skill-background">
+                <div id="skill-csharp" class="skill-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+        <h2 class="skill-name">ASP.NET</h2>
+        <div class="content-position">
+            <div class="skill-background">
+                <div id="skill-aspnet" class="skill-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+        <h2 class="skill-name">JavaScript</h2>
+        <div class="content-position">
+            <div class="skill-background">
+                <div id="skill-javascript" class="skill-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+        <h2 class="skill-name">HTML</h2>
+        <div class="content-position">
+            <div class="skill-background">
+                <div id="skill-html" class="skill-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+        <h2 class="skill-name">CSS</h2>
+        <div class="content-position">
+            <div class="skill-background">
+                <div id="skill-css" class="skill-bar"></div>    
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="@NavMenuCssClass">
-    <nav>
-        <NavLink href="" Match="NavLinkMatch.All">
-            Start
-        </NavLink>
 
-    </nav>
-</div>
 
 @code {
-    // Denna kod sköter logiken för att öppna/stänga menyn.
-    private bool collapseNavMenu = true;
+    [Parameter]
+    public bool ShowMenu { get; set; }
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+    [Parameter]
+    public EventCallback OnToggle { get; set; }
 }

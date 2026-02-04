@@ -15,7 +15,7 @@
     }
 
         .loading-progress circle:last-child {
-            stroke: #1b6ec2; /* Färgen på snurran - ändra gärna denna! */
+            stroke: #1b6ec2;
             stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
             transition: stroke-dasharray 0.05s ease-in-out;
         }
@@ -53,4 +53,120 @@
     }
 
 .blazor-error-boundary {
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDAiPjxyZWN0IHg9IjIzNSIgeT0iNTEiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0OSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUgLTUxKSI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI2Ny4wNTIgNTIuNzk4NyAyNj
+    background: #ffcccc;
+    padding: 1rem;
+}
+
+
+/* Egen design */
+.layout-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto; 
+    background-color: #E3E8FF;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* ---------Meny------------ */
+.menu-container {
+    width: 25%;
+    height: 100vh;
+    background-color: #17639F;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+    transition: width 0.5s ease, padding 0.5s ease;
+}
+
+/* När menyn är stängd */
+.menu-container.closed {
+    width: 0 !important;
+    padding: 0 !important;
+    min-width: 0;
+}
+
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #17639F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-position {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: #fff;
+}
+
+#name {
+    font-style: normal;
+}
+
+.info-position {
+    padding-left: 20%;
+}
+
+.skill-name {
+    padding-left: 20%;
+    margin-bottom: 4%;
+}
+
+.skill-background {
+    width: 65%;
+    height: 30px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+}
+
+.skill-bar {
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+#skill-java {
+    width: 90%;
+}
+
+#skill-csharp {
+    width: 80%;
+}
+
+#skill-aspnet {
+    width: 60%;
+}
+
+#skill-javascript {
+    width: 60%;
+}
+
+#skill-html {
+    width: 90%;
+}
+
+#skill-css {
+    width: 80%;
+}
