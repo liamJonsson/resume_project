@@ -194,15 +194,8 @@ h2 {
     }
 
     .skill-name {
+        padding-left: 19%;
         margin-bottom: 1%;
-    }
-
-    .skill-background {
-        height: 25px;
-    }
-
-    .skill-bar {
-        height: 25px;
     }
 }
 
@@ -220,14 +213,6 @@ h2 {
 
     .skill-name {
         margin-bottom: 2%;
-    }
-
-    .skill-background {
-        height: 25px;
-    }
-
-    .skill-bar {
-        height: 25px;
     }
 }
 
@@ -247,15 +232,7 @@ h2 {
     }
 
     .skill-name {
-        padding-left: 18%;
+        padding-left: 20%;
         margin-bottom: 3%;
-    }
-
-    .skill-background {
-        height: 20px;
-    }
-
-    .skill-bar {
-        height: 20px;
     }
 }
