@@ -83,10 +83,15 @@ p {
     font-weight: 400;
 }
 
+h2 {
+    font-size: 1.7rem;
+}
+
 /* ---------Meny------------ */
 .menu-container {
     width: 25%;
     height: 100vh;
+    padding: 20px 0 40px 0;
     background-color: #17639F;
     color: white;
     overflow: hidden;
@@ -96,12 +101,12 @@ p {
     transition: width 0.5s ease, padding 0.5s ease;
 }
 
-/* När menyn är stängd */
-.menu-container.closed {
-    width: 0 !important;
-    padding: 0 !important;
-    min-width: 0;
-}
+    /* När menyn är stängd */
+    .menu-container.closed {
+        width: 0 !important;
+        padding: 0 !important;
+        min-width: 0;
+    }
 
 .menu-icon {
     width: 50px;
@@ -130,7 +135,9 @@ p {
 }
 
 .info-position {
-    padding-left: 20%;
+    padding-left: 0 !important;
+    display: flex;
+    justify-content: center;
 }
 
 .skill-name {
@@ -175,7 +182,7 @@ p {
     width: 80%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1200px){
     p {
         font-size: 1.5rem;
     }
@@ -183,14 +190,11 @@ p {
     /* ---------Meny------------ */
     .menu-container {
         width: 100%;
-        padding-top: 20px;
         padding-right: 10px;
     }
 
-    .info-position {
-        padding-left: 0 !important;
-        display: flex;
-        justify-content: center;
+    .skill-name {
+        margin-bottom: 1%;
     }
 
     .skill-background {
@@ -211,14 +215,11 @@ p {
     /* ---------Meny------------ */
     .menu-container {
         width: 100%;
-        padding-top: 20px;
         padding-right: 10px;
     }
 
-    .info-position {
-        padding-left: 0 !important;
-        display: flex;
-        justify-content: center;
+    .skill-name {
+        margin-bottom: 2%;
     }
 
     .skill-background {
@@ -239,22 +240,15 @@ p {
     /* ---------Meny------------ */
     .menu-container {
         width: 100%;
-        padding-top: 20px;
     }
 
     .profile-image {
         border: 2px solid;
     }
 
-    .info-position {
-        padding-left: 0 !important;
-        display: flex;
-        justify-content: center;
-    }
-
     .skill-name {
         padding-left: 18%;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
     }
 
     .skill-background {
