@@ -2,13 +2,13 @@
 @*Om arIkryssad är true, ska det stå tom sträng annars closed 
 vilket lägger på css-klassen "closed"*@
 <div class="menu-container @(ShowMenu ? "" : "closed")">
-    <div class="d-flex justify-content-end">
-        <svg @onclick="OnToggle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" stroke="currentColor" stroke-width="1" class="bi bi-dash-lg" viewBox="0 0 16 16">
+    <div class="d-flex justify-content-end close-button-small">
+        <svg @onclick="OnToggle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" stroke="currentColor" stroke-width="2" class="bi bi-dash-lg" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
         </svg>
     </div>
     <div class="content-position">
-        <img src="/images/profile-picture.jpeg" alt="Profilbild " class="profile-image" />
+        <img src="/images/profile-picture.jpeg" alt="Profilbild" class="profile-image" />
     </div>   
     <div class="mt-4 info-position">
         <p id="name">Liam Jonsson</p>
@@ -18,7 +18,7 @@ vilket lägger på css-klassen "closed"*@
     </div>
     <div class="mt-4">
         <h2 class="skill-name">Java</h2>
-        <div class="content-position">
+        <div class="content-position content-position-small">
             <div class="skill-background">
                 <div id="skill-java" class="skill-bar"></div>
             </div>
@@ -26,7 +26,7 @@ vilket lägger på css-klassen "closed"*@
     </div>
     <div class="mt-4">
         <h2 class="skill-name">C#</h2>
-        <div class="content-position">
+        <div class="content-position content-position-small">
             <div class="skill-background">
                 <div id="skill-csharp" class="skill-bar"></div>
             </div>
@@ -34,7 +34,7 @@ vilket lägger på css-klassen "closed"*@
     </div>
     <div class="mt-4">
         <h2 class="skill-name">ASP.NET</h2>
-        <div class="content-position">
+        <div class="content-position content-position-small">
             <div class="skill-background">
                 <div id="skill-aspnet" class="skill-bar"></div>
             </div>
@@ -42,7 +42,7 @@ vilket lägger på css-klassen "closed"*@
     </div>
     <div class="mt-4">
         <h2 class="skill-name">JavaScript</h2>
-        <div class="content-position">
+        <div class="content-position content-position-small">
             <div class="skill-background">
                 <div id="skill-javascript" class="skill-bar"></div>
             </div>
@@ -50,7 +50,7 @@ vilket lägger på css-klassen "closed"*@
     </div>
     <div class="mt-4">
         <h2 class="skill-name">HTML</h2>
-        <div class="content-position">
+        <div class="content-position content-position-small">
             <div class="skill-background">
                 <div id="skill-html" class="skill-bar"></div>
             </div>
@@ -58,7 +58,7 @@ vilket lägger på css-klassen "closed"*@
     </div>
     <div class="mt-4">
         <h2 class="skill-name">CSS</h2>
-        <div class="content-position">
+        <div class="content-position content-position-small mb-3">
             <div class="skill-background">
                 <div id="skill-css" class="skill-bar"></div>    
             </div>
