@@ -177,160 +177,60 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     p {
-        font-family: "Roboto", sans-serif;
         font-size: 1.5rem;
-        font-style: italic;
-        font-weight: 400;
     }
 
     /* ---------Meny------------ */
     .menu-container {
-        width: 25%;
-        height: 100vh;
-        padding: 20px;
-        background-color: #17639F;
-        color: white;
-        overflow: hidden;
-        overflow-y: auto;
-        scrollbar-width: none;
-        white-space: nowrap;
-        transition: width 0.5s ease, padding 0.5s ease;
-    }
-
-        /* När menyn är stängd */
-        .menu-container.closed {
-            width: 0 !important;
-            padding: 0 !important;
-            min-width: 0;
-        }
-
-    .menu-icon {
-        width: 50px;
-        height: 50px;
-        background-color: #17639F;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content-position {
-        display: flex;
-        justify-content: center;
-    }
-
-    .profile-image {
-        width: 50%;
-        height: auto;
-        border-radius: 50%;
-        border: 3px solid;
-        border-color: #fff;
-    }
-
-    #name {
-        font-style: normal;
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 10px;
     }
 
     .info-position {
-        padding-left: 20%;
-    }
-
-    .skill-name {
-        padding-left: 20%;
-        margin-bottom: 4%;
+        padding-left: 0 !important;
+        display: flex;
+        justify-content: center;
     }
 
     .skill-background {
-        width: 65%;
-        height: 30px;
-        background-color: #D9D9D9;
-        border-radius: 50px;
+        height: 25px;
     }
 
     .skill-bar {
-        height: 30px;
-        background-color: #fff;
-        border-radius: 50px;
+        height: 25px;
     }
 }
 
+/*--------------Medium screen--------------*/
 @media screen and (min-width: 600px) and (max-width: 768px) {
     p {
-        font-family: "Roboto", sans-serif;
         font-size: 1.5rem;
-        font-style: italic;
-        font-weight: 400;
     }
 
     /* ---------Meny------------ */
     .menu-container {
-        width: 25%;
-        height: 100vh;
-        padding: 20px;
-        background-color: #17639F;
-        color: white;
-        overflow: hidden;
-        overflow-y: auto;
-        scrollbar-width: none;
-        white-space: nowrap;
-        transition: width 0.5s ease, padding 0.5s ease;
-    }
-
-        /* När menyn är stängd */
-        .menu-container.closed {
-            width: 0 !important;
-            padding: 0 !important;
-            min-width: 0;
-        }
-
-    .menu-icon {
-        width: 50px;
-        height: 50px;
-        background-color: #17639F;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content-position {
-        display: flex;
-        justify-content: center;
-    }
-
-    .profile-image {
-        width: 50%;
-        height: auto;
-        border-radius: 50%;
-        border: 3px solid;
-        border-color: #fff;
-    }
-
-    #name {
-        font-style: normal;
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 10px;
     }
 
     .info-position {
-        padding-left: 20%;
-    }
-
-    .skill-name {
-        padding-left: 20%;
-        margin-bottom: 4%;
+        padding-left: 0 !important;
+        display: flex;
+        justify-content: center;
     }
 
     .skill-background {
-        width: 65%;
-        height: 30px;
-        background-color: #D9D9D9;
-        border-radius: 50px;
+        height: 25px;
     }
 
     .skill-bar {
-        height: 30px;
-        background-color: #fff;
-        border-radius: 50px;
+        height: 25px;
     }
 }
 
+/*--------------Small screen--------------*/
 @media screen and (max-width: 600px) {
     p {
         font-size: 1.2rem;
@@ -342,17 +242,7 @@ p {
         padding-top: 20px;
     }
 
-    .menu-icon {
-        width: 50px;
-        height: 50px;
-        background-color: #17639F;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .profile-image {
-        width: 50%;
         border: 2px solid;
     }
 
