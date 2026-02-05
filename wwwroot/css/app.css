@@ -333,12 +333,13 @@ p {
 
 @media screen and (max-width: 600px) {
     p {
-        font-size: 0.6rem;
+        font-size: 1.2rem;
     }
 
     /* ---------Meny------------ */
     .menu-container {
-        padding-top: 10px;
+        width: 100%;
+        padding-top: 20px;
     }
 
     .menu-icon {
@@ -350,32 +351,27 @@ p {
         align-items: center;
     }
 
-    .content-position-small {
-        display: flex;
-        justify-content: start;
-    }
-
     .profile-image {
-        width: 60%;
+        width: 50%;
         border: 2px solid;
     }
 
     .info-position {
-        padding-left: 10%;
+        padding-left: 0 !important;
+        display: flex;
+        justify-content: center;
     }
 
     .skill-name {
-        font-size: 1rem;
-        padding-left: 10%;
+        padding-left: 18%;
         margin-bottom: 5%;
     }
 
     .skill-background {
-        height: 15px;
-        margin-left: 8%;
+        height: 20px;
     }
 
     .skill-bar {
-        height: 15px;
+        height: 20px;
     }
 }
