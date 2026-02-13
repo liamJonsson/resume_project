@@ -83,11 +83,12 @@ p {
     font-weight: 400;
 }
 
-h2 {
-    font-size: 1.7rem;
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
-/* ---------Meny------------ */
+/* Meny */
 .menu-container {
     width: 25%;
     height: 100vh;
@@ -182,12 +183,83 @@ h2 {
     width: 80%;
 }
 
+/* Education */
+.education-header {
+    color: #17639F;
+    font-size: 3rem;
+    margin: 5% 0 0 7%;
+}
+
+.education-container {
+    width: 100%;
+    height: auto;
+    padding-left: 6%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education-items {
+    width: 40%;
+    height: auto;
+    margin: 6% 6% 0 0;
+    background-color: #17639F;
+    border-radius: 20px;
+}
+
+.education-content {
+    width: 90%;
+    padding: 5%;
+    color: white;
+}
+
+.education-name {
+    font-size: 1.5rem;
+}
+
+.education-text {
+    font-size: 1rem;
+}
+
+/* Education - Full Screen */
+.education-header-full {
+    color: #17639F;
+    font-size: 2.5rem;
+    margin: 5% 0 0 4%;
+}
+
+.education-container-full {
+    width: 100%;
+    height: auto;
+    padding-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education-items-full {
+    width: 30%;
+    height: auto;
+    margin: 5% 3% 0 0;
+    background-color: #17639F;
+    border-radius: 20px;
+}
+
+/* Large screens */
 @media screen and (min-width: 768px) and (max-width: 1200px){
     p {
         font-size: 1.5rem;
     }
 
-    /* ---------Meny------------ */
+    h1 {
+        font-size: 2.5rem;
+        margin: 5% 0 0 4%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    /* Meny */
     .menu-container {
         width: 100%;
         padding-right: 10px;
@@ -199,13 +271,13 @@ h2 {
     }
 }
 
-/*--------------Medium screen--------------*/
+/* Medium screen */
 @media screen and (min-width: 600px) and (max-width: 768px) {
     p {
         font-size: 1.5rem;
     }
 
-    /* ---------Meny------------ */
+    /* Meny */
     .menu-container {
         width: 100%;
         padding-right: 10px;
@@ -214,15 +286,20 @@ h2 {
     .skill-name {
         margin-bottom: 2%;
     }
+
+    /* Education - Full Screen */
+    .education-items-full {
+        width: 45%;
+    }
 }
 
-/*--------------Small screen--------------*/
+/* Small screen */
 @media screen and (max-width: 600px) {
     p {
         font-size: 1.2rem;
     }
 
-    /* ---------Meny------------ */
+    /* Meny */
     .menu-container {
         width: 100%;
     }
@@ -234,5 +311,24 @@ h2 {
     .skill-name {
         padding-left: 20%;
         margin-bottom: 3%;
+    }
+
+    /* Education - Full Screen */
+    .education-header-full {
+        font-size: 2.5rem;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .education-container-full {
+        padding-left: 0%;
+    }
+
+    .education-items-full {
+        width: 80%;
+        height: auto;
+        margin: 7% 10%;
+        background-color: #17639F;
+        border-radius: 20px;
     }
 }
