@@ -1,5 +1,55 @@
 ﻿@page "/"
 
 <PageTitle>Mitt CV</PageTitle>
+<h1 class="@(ShowMenu ? "education-header" : "education-header-full")">Utbildningar</h1>
+<div class="@(ShowMenu ? "education-container" : "education-container-full")">
+    @foreach(Education education in MyEducation)
+    {
+        <div class="@(ShowMenu ? "education-items" : "education-items-full")">
+            <div class="education-content">
+                <h2 class="education-name">@education.Title</h2>
+                <h3>@education.School (@education.Years)</h3>
+                <p class="education-text">@education.Description</p>
+            </div>
+        </div>
+    }
+</div>
 
+@code 
+{
+    [CascadingParameter]
+    public bool ShowMenu { get; set; }
 
+    private List<Education> MyEducation = new List<Education>();
+
+    protected override void OnInitialized()
+    {
+        MyEducation.Add(
+            new Education
+            {
+                Title = "Teknik - IT-inriktning",
+                School = "Lindeskolan",
+                Years = "2020 - 2023",
+                Description = "Utbildning på teknikprogrammet i Lindesberg där jag valde IT-inriktningen från och med årskurs 2."
+            }
+        );
+        MyEducation.Add(
+            new Education
+            {
+                Title = "Systemvetenskapliga programmet",
+                School = "Örebro Universitet",
+                Years = "2024 - ",
+                Description = "Utbildning på systemvetenskapliga programmet i Örebro där jag läst kurser som vidgat mina kunskaper inom Java, C#, HTML, CSS och andra språk"
+            }
+        );
+        MyEducation.Add(
+            new Education
+            {
+                Title = "Teknik - IT-inriktning",
+                School = "Lindeskolan",
+                Years = "2020 - 2023",
+                Description = "Utbildning på teknikprogrammet i Lindesberg där jag valde IT-inriktningen från och med årskurs 2."
+            }
+        );
+    }
+}

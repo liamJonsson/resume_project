@@ -12,8 +12,10 @@
                 </svg>
             </div>
         }
-        <article class="content px-4">
-            @Body
+        <article>
+            <CascadingValue Value="showMenu">
+                @Body
+            </CascadingValue>
         </article>
     </main>
 </div>
