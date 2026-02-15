@@ -325,9 +325,9 @@ h3 {
     }
 
     .education-items-full {
-        width: 80%;
+        width: 90%;
         height: auto;
-        margin: 7% 10%;
+        margin: 7% 5%;
         background-color: #17639F;
         border-radius: 20px;
     }
