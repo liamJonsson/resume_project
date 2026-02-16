@@ -254,22 +254,18 @@ main {
         padding-right: 10px;
     }
 
-    .menu-container p {
-        font-size: 2.5rem;
-    }
-
     .menu-container h2 {
         padding-left: 19%;
         margin: 4% 0 2% 0;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .skill-background {
-        height: 50px;
+        height: 40px;
     }
 
     .skill-bar {
-        height: 50px;
+        height: 40px;
     }
 
     /* Education - Full Screen */
