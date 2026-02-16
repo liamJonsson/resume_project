@@ -1,15 +1,15 @@
 ﻿@page "/"
 
 <PageTitle>Mitt CV</PageTitle>
-<h1 class="@(ShowMenu ? "education-header" : "education-header-full")">Utbildningar</h1>
+<h1 class="@(ShowMenu ? "education-header" : "education-header-full")">Utbildning</h1>
 <div class="@(ShowMenu ? "education-container" : "education-container-full")">
     @foreach(Education education in MyEducation)
     {
         <div class="@(ShowMenu ? "education-items" : "education-items-full")">
             <div class="education-content">
-                <h2 class="education-name">@education.Title</h2>
+                <h2>@education.Title</h2>
                 <h3>@education.School (@education.Years)</h3>
-                <p class="education-text">@education.Description</p>
+                <p>@education.Description</p>
             </div>
         </div>
     }

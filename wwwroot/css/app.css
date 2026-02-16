@@ -76,18 +76,6 @@ main {
     background-color: #E3E8FF;
 }
 
-p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 400;
-}
-
-h3 {
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-
 /* Meny */
 .menu-container {
     width: 25%;
@@ -131,19 +119,28 @@ h3 {
     border-color: #fff;
 }
 
-#name {
-    font-style: normal;
-}
-
 .info-position {
     padding-left: 0 !important;
     display: flex;
     justify-content: center;
 }
 
-.skill-name {
+.menu-container p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#name {
+    font-style: normal;
+}
+
+.menu-container h2 {
     padding-left: 20%;
     margin-bottom: 4%;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .skill-background {
@@ -212,18 +209,24 @@ h3 {
     color: white;
 }
 
-.education-name {
+.education-content h2 {
     font-size: 1.5rem;
 }
 
-.education-text {
+.education-content h3 {
+    font-size: 1.1rem;
+}
+
+.education-content p {
+    padding-top: 3%;
     font-size: 1rem;
+    font-weight: 300;
 }
 
 /* Education - Full Screen */
 .education-header-full {
     color: #17639F;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 5% 0 0 4%;
 }
 
@@ -243,74 +246,71 @@ h3 {
     border-radius: 20px;
 }
 
-/* Large screens */
-@media screen and (min-width: 768px) and (max-width: 1200px){
-    p {
-        font-size: 1.5rem;
+/* Ipads - Medium */
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    /* Meny */
+    .menu-container {
+        width: 100%;
+        padding-right: 10px;
     }
 
-    h1 {
+    .menu-container p {
         font-size: 2.5rem;
-        margin: 5% 0 0 4%;
     }
 
-    h3 {
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-
-    /* Meny */
-    .menu-container {
-        width: 100%;
-        padding-right: 10px;
-    }
-
-    .skill-name {
+    .menu-container h2 {
         padding-left: 19%;
-        margin-bottom: 1%;
-    }
-}
-
-/* Medium screen */
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    p {
-        font-size: 1.5rem;
+        margin: 4% 0 2% 0;
+        font-size: 3rem;
     }
 
-    /* Meny */
-    .menu-container {
-        width: 100%;
-        padding-right: 10px;
+    .skill-background {
+        height: 50px;
     }
 
-    .skill-name {
-        margin-bottom: 2%;
+    .skill-bar {
+        height: 50px;
     }
 
     /* Education - Full Screen */
+    .education-header-full {
+        margin: 5% 0 0 5%;
+    }
+
+    .education-container-full {
+        padding-left: 4%;
+    }
+
     .education-items-full {
-        width: 45%;
+        width: 44%;
+        height: auto;
+        margin: 5% 4% 0 0;
     }
 }
 
 /* Small screen */
 @media screen and (max-width: 600px) {
-    p {
-        font-size: 1.2rem;
-    }
-
     /* Meny */
     .menu-container {
         width: 100%;
+        padding-right: 10px;
     }
 
-    .profile-image {
-        border: 2px solid;
+    .menu-container p {
+        font-size: 2.0rem;
     }
 
-    .skill-name {
-        padding-left: 20%;
-        margin-bottom: 3%;
+    .menu-container h2 {
+        margin: 8% 0 3% 0;
+        font-size: 2.5rem;
+    }
+
+    .skill-background {
+        height: 40px;
+    }
+
+    .skill-bar {
+        height: 40px;
     }
 
     /* Education - Full Screen */
@@ -325,10 +325,7 @@ h3 {
     }
 
     .education-items-full {
-        width: 90%;
-        height: auto;
-        margin: 7% 5%;
-        background-color: #17639F;
-        border-radius: 20px;
+        width: 88%;
+        margin: 7% 6%;
     }
 }
