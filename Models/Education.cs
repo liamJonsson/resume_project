@@ -4,7 +4,7 @@
     {
         public string Title;
         public string School;
-        public string Years;
+        public string Period;
         public string Description;
     }
 }

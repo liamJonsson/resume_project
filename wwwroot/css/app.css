@@ -97,6 +97,20 @@ main {
         min-width: 0;
     }
 
+    .menu-container p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 400;
+    }
+
+    .menu-container h2 {
+        padding-left: 20%;
+        margin-bottom: 4%;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
 .menu-icon {
     width: 50px;
     height: 50px;
@@ -125,22 +139,8 @@ main {
     justify-content: center;
 }
 
-.menu-container p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 400;
-}
-
 #name {
     font-style: normal;
-}
-
-.menu-container h2 {
-    padding-left: 20%;
-    margin-bottom: 4%;
-    font-size: 1.8rem;
-    font-weight: 500;
 }
 
 .skill-background {
@@ -181,13 +181,13 @@ main {
 }
 
 /* Education */
-.education-header {
+.cv-section-header {
     color: #17639F;
     font-size: 3rem;
     margin: 5% 0 0 7%;
 }
 
-.education-container {
+.cv-section-container {
     width: 100%;
     height: auto;
     padding-left: 6%;
@@ -195,7 +195,7 @@ main {
     flex-wrap: wrap;
 }
 
-.education-items {
+.cv-section-items {
     width: 40%;
     height: auto;
     margin: 6% 6% 0 0;
@@ -203,34 +203,34 @@ main {
     border-radius: 20px;
 }
 
-.education-content {
+.cv-section-content {
     width: 90%;
     padding: 5%;
     color: white;
 }
 
-.education-content h2 {
-    font-size: 1.5rem;
-}
+    .cv-section-content h2 {
+        font-size: 1.5rem;
+    }
 
-.education-content h3 {
-    font-size: 1.1rem;
-}
+    .cv-section-content h3 {
+        font-size: 1.1rem;
+    }
 
-.education-content p {
-    padding-top: 3%;
-    font-size: 1rem;
-    font-weight: 300;
-}
+    .cv-section-content p {
+        padding-top: 3%;
+        font-size: 1rem;
+        font-weight: 300;
+    }
 
 /* Education - Full Screen */
-.education-header-full {
+.cv-section-header-full {
     color: #17639F;
     font-size: 3rem;
     margin: 5% 0 0 4%;
 }
 
-.education-container-full {
+.cv-section-container-full {
     width: 100%;
     height: auto;
     padding-left: 3%;
@@ -238,7 +238,7 @@ main {
     flex-wrap: wrap;
 }
 
-.education-items-full {
+.cv-section-items-full {
     width: 30%;
     height: auto;
     margin: 5% 3% 0 0;
@@ -254,11 +254,11 @@ main {
         padding-right: 10px;
     }
 
-    .menu-container h2 {
-        padding-left: 19%;
-        margin: 4% 0 2% 0;
-        font-size: 2.5rem;
-    }
+        .menu-container h2 {
+            padding-left: 19%;
+            margin: 4% 0 2% 0;
+            font-size: 2.5rem;
+        }
 
     .skill-background {
         height: 40px;
@@ -269,15 +269,15 @@ main {
     }
 
     /* Education - Full Screen */
-    .education-header-full {
+    .cv-section-header-full {
         margin: 5% 0 0 5%;
     }
 
-    .education-container-full {
+    .cv-section-container-full {
         padding-left: 4%;
     }
 
-    .education-items-full {
+    .cv-section-items-full {
         width: 44%;
         height: auto;
         margin: 5% 4% 0 0;
@@ -292,14 +292,14 @@ main {
         padding-right: 10px;
     }
 
-    .menu-container p {
-        font-size: 1.2rem;
-    }
+        .menu-container p {
+            font-size: 1.2rem;
+        }
 
-    .menu-container h2 {
-        margin: 6% 0 2% 0;
-        font-size: 1.5rem;
-    }
+        .menu-container h2 {
+            margin: 6% 0 2% 0;
+            font-size: 1.5rem;
+        }
 
     .skill-background {
         height: 30px;
@@ -310,17 +310,17 @@ main {
     }
 
     /* Education - Full Screen */
-    .education-header-full {
+    .cv-section-header-full {
         font-size: 2.5rem;
         margin-top: 5%;
         text-align: center;
     }
 
-    .education-container-full {
+    .cv-section-container-full {
         padding-left: 0%;
     }
 
-    .education-items-full {
+    .cv-section-items-full {
         width: 88%;
         margin: 7% 6%;
     }
