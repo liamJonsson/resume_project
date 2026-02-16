@@ -297,20 +297,20 @@ main {
     }
 
     .menu-container p {
-        font-size: 2.0rem;
+        font-size: 1.2rem;
     }
 
     .menu-container h2 {
-        margin: 8% 0 3% 0;
-        font-size: 2.5rem;
+        margin: 6% 0 2% 0;
+        font-size: 1.5rem;
     }
 
     .skill-background {
-        height: 40px;
+        height: 30px;
     }
 
     .skill-bar {
-        height: 40px;
+        height: 30px;
     }
 
     /* Education - Full Screen */
