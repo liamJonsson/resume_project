@@ -1,6 +1,17 @@
 ﻿@page "/"
 
 <PageTitle>Mitt CV</PageTitle>
+@*About me*@
+<h1 class="@(ShowMenu ? "cv-section-header" : "cv-section-header-full")">Målet med mitt jobb</h1>
+<div class="@(ShowMenu ? "cv-section-container" : "cv-section-container-full")">
+    <div class="@(ShowMenu ? "goals-items" : "goals-items-full")">
+        <p class="goals-content">
+            Målet med mitt jobb är att alltid göra mitt bästa för att uppgiften ska utföras på så bra sätt
+            som möjligt. Jag är noggrann, målmedveten och driven vilket också bidrar till att jobbet som
+            jag utför blir så bra som jag kan göra det.
+        </p>
+    </div>
+</div>
 @*Education*@
 <h1 class="@(ShowMenu ? "cv-section-header" : "cv-section-header-full")">Utbildning</h1>
 <div class="@(ShowMenu ? "cv-section-container" : "cv-section-container-full")">
@@ -9,7 +20,7 @@
         <div class="@(ShowMenu ? "cv-section-items" : "cv-section-items-full")">
             <div class="cv-section-content">
                 <h2>@education.Title</h2>
-                <h3>@education.School (@education.Period)</h3>
+                <h3>@education.School, @education.Period</h3>
                 <p>@education.Description</p>
             </div>
         </div>
@@ -24,7 +35,11 @@
         <div class="@(ShowMenu ? "cv-section-items" : "cv-section-items-full")">
             <div class="cv-section-content">
                 <h2>@experience.Title</h2>
-                <h3>@experience.Company (@experience.Period)</h3>
+                <h3>@experience.Company</h3>
+                @foreach (var period in experience.Periods)
+                {
+                    <h3>@period</h3>
+                }
                 <p>@experience.Description</p>
             </div>
         </div>
@@ -46,27 +61,9 @@
             new Education
             {
                 Title = "Teknik - IT-inriktning",
-                School = "Lindeskolan",
+                School = "Lindeskolan, Lindesberg",
                 Period = "2020 - 2023",
-                Description = "Utbildning på teknikprogrammet i Lindesberg där jag valde IT-inriktningen från och med årskurs 2."
-            }
-        );
-        MyEducation.Add(
-            new Education
-            {
-                Title = "Systemvetenskapliga programmet",
-                School = "Örebro Universitet",
-                Period = "2024 - ",
-                Description = "Utbildning på systemvetenskapliga programmet i Örebro där jag läst kurser som vidgat mina kunskaper inom Java, C#, HTML, CSS och andra språk"
-            }
-        );
-        MyEducation.Add(
-            new Education
-            {
-                Title = "Teknik - IT-inriktning",
-                School = "Lindeskolan",
-                Period = "2020 - 2023",
-                Description = "Utbildning på teknikprogrammet i Lindesberg där jag valde IT-inriktningen från och med årskurs 2."
+                Description = "Lindeskolan och Teknikprogrammet var helt rätt val för mig. Utbildningen var treårig där jagår 2 och 3 fick fördjupa mina kunskaper inom IT då jag valde det som min inriktning. Minahöga studieresultat och mitt kamratskap ledde till ett stipendium som jag mottog under slutetav trean."
             }
         );
         MyExperience.Add(
@@ -74,7 +71,7 @@
             {
                 Title = "Teknik - IT-inriktning",
                 Company = "Lindeskolan",
-                Period = "2020 - 2023",
+                Periods = new List<string> { "2020 - 2023"},
                 Description = "Utbildning på teknikprogrammet i Lindesberg där jag valde IT-inriktningen från och med årskurs 2."
             }
         );
@@ -83,7 +80,7 @@
             {
                 Title = "Systemvetenskapliga programmet",
                 Company = "Örebro Universitet",
-                Period = "2024 - ",
+                Periods = new List<string> { "2020 - 2023" },
                 Description = "Utbildning på systemvetenskapliga programmet i Örebro där jag läst kurser som vidgat mina kunskaper inom Java, C#, HTML, CSS och andra språk"
             }
         );
@@ -92,7 +89,7 @@
             {
                 Title = "Teknik - IT-inriktning",
                 Company = "Lindeskolan",
-                Period = "2020 - 2023",
+                Periods = new List<string> { "2020 - 2023" },
                 Description = "Utbildning på teknikprogrammet i Lindesberg där jag valde IT-inriktningen från och med årskurs 2."
             }
         );
