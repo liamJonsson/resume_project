@@ -198,10 +198,15 @@ main {
 }
 
 .goals-content {
-    width: 95%;
-    padding: 2.5%;
+    width: 97%;
+    padding: 1.5%;
     color: white;
 }
+
+    .goals-content p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 
 /* Education */
 .cv-section-header {
@@ -301,8 +306,9 @@ main {
     }
 
     .goals-content {
-        width: 93.5%;
-        padding: 5% 1.5% 5% 5%;
+        width: 95%;
+        padding: 2.5%;
+        color: white;
     }
 
     /* Education - Full Screen */
@@ -349,7 +355,13 @@ main {
     /* Goals */
     .goals-items-full {
         width: 88%;
-        margin: 7% 6%;
+        margin-top: 7%;
+    }
+
+    .goals-content {
+        width: 90%;
+        padding: 5%;
+        color: white;
     }
 
     /* Education - Full Screen */
@@ -360,11 +372,12 @@ main {
     }
 
     .cv-section-container-full {
-        padding-left: 0%;
+        display: flex;
+        justify-content: center;
     }
 
     .cv-section-items-full {
         width: 88%;
-        margin: 7% 6%;
+        margin-top: 7%;
     }
 }
