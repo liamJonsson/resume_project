@@ -6,5 +6,6 @@
         public string School;
         public string Period;
         public string Description;
+        public List<string> Courses = new List<string>();
     }
 }

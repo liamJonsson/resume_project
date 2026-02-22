@@ -24,6 +24,18 @@
                 <h2>@education.Title</h2>
                 <h3>@education.School, @education.Period</h3>
                 <p>@education.Description</p>
+                <details>
+                    <summary>
+                        Kurser
+                    </summary>
+
+                    <ul>
+                        @foreach (var course in education.Courses)
+                        {
+                            <li>@course</li>
+                        }
+                    </ul>
+                </details>
             </div>
         </div>
     }
@@ -65,7 +77,18 @@
                 Title = "Teknik - IT-inriktning",
                 School = "Lindeskolan, Lindesberg",
                 Period = "2020 - 2023",
-                Description = "Lindeskolan och Teknikprogrammet var helt rätt val för mig. Utbildningen var treårig där jagår 2 och 3 fick fördjupa mina kunskaper inom IT då jag valde det som min inriktning. Minahöga studieresultat och mitt kamratskap ledde till ett stipendium som jag mottog under slutetav trean."
+                Description = "Lindeskolan och Teknikprogrammet var helt rätt val för mig. Utbildningen var treårig där jag år 2 och 3 fick fördjupa mina kunskaper inom IT då jag valde det som min inriktning. Mina höga studieresultat och mitt kamratskap ledde till ett stipendium som jag mottog under slutet av trean.",
+                Courses = new List<string> { "CAD 1", "Dator- och nätverksteknik", "Engelska 7", "Gränsnittsdesign", "Matematik 4", "Programmering 1", "Programering 2", "Webbserverprogrammering 1", "Webbutveckling 1", "Webbutveckling 2 mm" }
+            }
+        );
+        MyEducation.Add(
+            new Education
+            {
+                Title = "Systemvetenskapliga programmet",
+                School = "Örebro Universitet, Örebro",
+                Period = "2024 - ",
+                Description = "Systemvetenskapliga programmet på Örebro Universitet har varit helt rätt nästa steg för mig i livet. Jag har läst kurser som intresserar mig och har fått fördjupa mina kunskaper ytterliggare inom programmering. Under utbildningen har jag jobbat med Java, C#, .Net och mycket mer.  ",
+                Courses = new List<string> { "Informatik med systemvetenskaplig inriktning, grundkurs", "Informatik, Kravhantering, fortsättningskurs", "Informatik, Mjukvaruarkitektur, fortsättningskurs", "Informatik, Systemutvecklingsprojekt med Scrum och Extreme Programming, fortsättningskurs", "Informatik, Interaktionsdesign, fortsättningskurs", "Informatik, Klientprogrammering för webbsystem, fortsättningskurs", "Informatik, Back-end systemutveckling, fortsättningskurs", "Informatik, Webbsystem med .NET, fortsättningskurs" }
             }
         );
         MyExperience.Add(
